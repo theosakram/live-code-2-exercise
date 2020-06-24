@@ -1,0 +1,26 @@
+[
+  {
+    "first_name": "Fyrthas",
+    "last_name": "Elnharsyg",
+    "job": "Alchemist",
+    "role": "Support"
+  },
+  {
+    "first_name": "Allynur",
+    "last_name": "Wyrvalenreyn",
+    "job": "Magician",
+    "role": "Assassin"
+  },
+  {
+    "first_name": "Geilwydd",
+    "last_name": "Skholenhaar",
+    "job": "Shielder",
+    "role": "Tanker"
+  },
+  {
+    "first_name": "Faran",
+    "last_name": "Ysdravyl",
+    "job": "Magician",
+    "role": "Fighter"
+  }
+]

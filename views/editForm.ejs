@@ -1,0 +1,58 @@
+<%- include('partials/head.ejs')  %>
+
+<body>
+  <h1>Edit Hero</h1>
+  <form action="/heroes/edit/<%= data[0].id %>" method="POST">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="first_name" value="<%= data[0].first_name %>" required><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="last_name" value="<%= data[0].last_name %>" required><br><br>
+    <label for="job">Job</label>
+    <select name="job" required="required">
+      <% if (data[0].job === 'Alchemist') { %>
+      <option selected>Alchemist</option>
+      <option>Alchemist</option>
+      <option>Magician</option>
+      <option>Shielder</option>
+      <% } else if (data[0].job === 'Magician') { %>
+      <option selected>Magician</option>
+      <option>Alchemist</option>
+      <option>Magician</option>
+      <option>Shielder</option>
+      <% } else if (data[0].job === 'Shielder') { %>
+      <option selected>Shielder</option>
+      <option>Alchemist</option>
+      <option>Magician</option>
+      <option>Shielder</option>
+      <% } %>
+    </select>
+    <label for="role">Role</label>
+    <select name="role" required="required">
+      <% if (data[0].role === 'Assassin') { %>
+      <option selected>Assassin</option>
+      <option>Assassin</option>
+      <option>Fighter</option>
+      <option>Support</option>
+      <% } else if (data[0].role === 'Fighter') { %>
+      <option selected>Fighter</option>
+      <option>Assassin</option>
+      <option>Fighter</option>
+      <option>Support</option>
+      <% } else if (data[0].role === 'Support') { %>
+      <option selected>Support</option>
+      <option>Assassin</option>
+      <option>Fighter</option>
+      <option>Support</option>
+      <% } else if (data[0].role === 'Tanker') { %>
+      <option selected>Tanker</option>
+      <option>Assassin</option>
+      <option>Fighter</option>
+      <option>Support</option>
+      <option>Tanker</option>
+      <% } %>
+    </select>
+    <input type="submit" value="Edit Hero">
+  </form>
+</body>
+
+<%- include('partials/foot.ejs')  %>
